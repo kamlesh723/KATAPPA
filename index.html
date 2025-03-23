@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <dl>
+        <dt>Name</dt>
+        <dd>
+            <input type="text" name="" id="textName" placeholder="ENTER IN UPPERCASE " onkeyup="checkCase()">
+        </dd>
+    </dl>
+    <script type="text/javascript">
+        function checkCase(){
+
+            //target the elemnt
+    
+             let  UserName  = document.getElementById("textName");
+            //access the charater and make uppercase
+                    let result =UserName.value.toUpperCase();
+                     console.log(typeof result);
+                     console.log(result);
+
+                     //return output
+                     UserName.value = result;
+                  
+        }
+
+    </script>
+</body>
+</html>
